@@ -1,0 +1,97 @@
+<!-- Basic Calculator program -->
+<!-- $author = 'Clement Anietie' -->
+<!-- $email = 'aakjhonclems@gmail.com' -->
+<!-- $date = 'Sunday 19 July 2020' -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = 'utf-8' lang = 'en'>
+		<meta name = 'author' content = 'Clement Anietie'>
+		<meta name = 'viewport' content = 'user-scalable = no'>
+		<meta name = 'description' content = 'online basic calculator'>
+		<meta name = 'keywords' content = 'tax, discount, calculator, percentage'>
+		<link rel = 'stylesheet' href = 'calc-portrait.css' media = 'screen and (orientation: portrait)'>
+		<link rel = 'stylesheet' href = 'calc-landscape.css' media = 'screen and (orientation: landscape)'>
+		<title>Online Basic Calculator</title>
+	</head>
+	<body>
+		<div id = 'info'> &equiv; </div>
+		<div id = 'container'>
+			<label>M</label><div id = 'topScreen'></div>
+			<div id = 'funcDiv'>
+				<button class = 'piBtn mcBtn'>MC</button><button class = 'piBtn mpBtn'>M+</button>
+				<button class = 'piBtn mmBtn'>M-</button><button class = 'piBtn mrBtn'>MR</button>
+				<button class = 'piBtn acBtn'>AC</button>
+				<button class = 'piBtn' id = 'piBtnId'>&pi;</button><button class = 'piBtn sqrtBtn'>√x</button>
+				<button class = 'piBtn sqBtn'>x²</button><button class = 'piBtn pcgBtn'>%</button>
+				<button class = 'piBtn bsBtn'>BS</button>
+			</div>
+			<div id = 'digitsDiv'>
+				<button class = 'num0Btn num7Btn'>7</button><button class = 'num0Btn num8Btn'>8</button>
+				<button class = 'num0Btn num9Btn'>9</button><button class = 'num0Btn dvdBtn'>÷</button>
+				<button class = 'num0Btn rnd2Btn'>•00</button>
+				<button class = 'num0Btn num4Btn'>4</button><button class = 'num0Btn num5Btn'>5</button>
+				<button class = 'num0Btn num6Btn'>6</button><button class = 'num0Btn mltBtn'>×</button>
+				<button class = 'num0Btn rnd0Btn'>0•</button>
+				<button class = 'num0Btn num1Btn'>1</button><button class = 'num0Btn num2Btn'>2</button>
+				<button class = 'num0Btn num3Btn'>3</button><button class = 'num0Btn mnsBtn'>-</button>
+				<button class = 'num0Btn eqlBtn'>=</button>
+				<button id = 'num0Id' class = 'num0Btn'>0</button><button class = 'num0Btn pntBtn'>•</button>
+				<button class = 'num0Btn pmBtn'>±</button><button class = 'num0Btn plsBtn'>+</button>
+			</div>
+			<a id = 'tweet' href = 'https://www.twitter.com/caanietie'>Tweet at me</a>
+		</div>
+		<div id = 'desc'> 
+			<div class = 'infoDiv'><u><b><center> Operating The Calculator </center></b></u><br>
+				This calculator works like a small handheld basic calculator which performs addition, subtraction, division and multiplication operations up to a precision of 13 digits.<br>
+				Below further explains the other functions incorporated into the calculator:
+				<ul>
+					<li><span>MC &#8667;</span> Memory Clear: clears memory of the calculator.</li>
+					<li><span>M+ &#8667;</span> Memory Plus: increments the memory by the displayed value.</li>
+					<li><span>M- &#8667;</span> Memory Minus: decrements the memory by the displayed value.</li>
+					<li><span>MR &#8667;</span> Memory Recall: displays the value in memory.<br>
+						An <span style = 'font-size: small;'>M</span> at the bottom left of the screen indicates that a value has been stored.</li>
+					<li><span>AC &#8667;</span> All Clear: resets the calculator.</li>
+					<li><span>BS &#8667;</span> Backspace: deletes the last number on the display.</li>
+					<li><span>√x &#8667;</span> Square Root: takes square root of displayed value and display result.</li>
+					<li><span>+/- &#8667;</span> Plus/Minus: changes the sign of the displayed value.</li>
+					<li><span>π &#8667;</span> pi: display the value of constant pi.</li>
+					<li><span>x² &#8667;</span> Square: square the displayed value and display result.</li>
+					<li><span>•00 &#8667;</span> Rounds the display value to 2 decimal places such as in currency.</li>
+					<li><span>0• &#8667;</span> Rounds off the display value to 0 decimal places.</li>
+					<li><span>% &#8667;</span> Percent: use displayed value to calculate a percentage.</li>
+				</ul>
+			</div>
+			<div class = 'infoDiv'><u> Accessible Calculator Features </u><br>
+				<span>Example: To add 6% tax to a purchase of £851</span><br>
+				Enter <span>851 + 6 %</span> and the display changes to <span>51.06 (51.06 is 6% of 851).</span><br>
+				Enter <span>=</span> to complete the calculation <span>851 + 51.06 = 902.06</span><br>
+				<span>Keyboard Control:</span><br> You can use the calculator without a mouse by tabbing among the calculator keys. Press "Enter" when a key is focused. This method can be arduous however, since you must tab through all keys in sequence.<br>
+				<span>Number Keypad Control:</span><br> You can use the calculator with with most Number Pads and Keyboards in the most popular browsers for numbers, and the basic functions of addition, subtraction, multiplication, and division and backspace.
+			</div>
+			<div class = 'infoDiv'><u> Calculating Percentages </u><br>
+				Multiplication and Division will convert the displayed value to a percent in decimal form and the operation is completed when <span>=</span> is pressed. <span>Example: To find 20% of 25</span><br>
+				Press <span>25 x 20 %</span> and the display changes <span>20%</span> to <span>0.2</span><br>
+				Enter <span>=</span> to complete the calculation <span>25 x 0.2 = 5</span>.<br>
+				The answer <span>5</span> shows in the display.<br>
+				<br>
+				Addition or Subtraction will add or subtract the percentage of a value. <span>Example: To add 20% to 25</span><br>
+				Enter <span>25 + 20 %</span> and the display changes to <span>5 (5 is 20% of 25).</span><br>
+				Enter <span>=</span> to complete the calculation <span>25 + 5 = 30.</span><br>
+				The answer <span>30</span> shows in the display.
+			</div>
+			<div class = 'infoDiv'><u> Tax Calculation </u><br>
+				<span>Example: To add 6% tax to a purchase of £851</span><br>
+				Enter <span>851 + 6 %</span> and the display changes to <span>51.06 (51.06 is 6% of 851).</span><br>
+				Enter <span>=</span> to complete the calculation <span>851 + 51.06 = 902.06</span><br>
+				The answer <span>902.06</span> shows in the display.
+			</div>
+			<div class = 'infoDiv'>
+				Please <a href = 'http://www.twitter.com/caanietie'>tweet at me</a> if you have questions or suggestions.
+			</div>
+		</div>
+		<script type = 'text/javascript' src = 'manual.js' defer></script>
+		<script type = 'text/javascript' src = 'calculator.js' defer></script>
+	</body>
+</html>
