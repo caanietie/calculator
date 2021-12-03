@@ -1,1 +1,2 @@
-This is an implementation of a basic calculator, and is part of the odin project programming assignment. This calculator does not work according to the BODMAS principle, please use this program as is, and contributions and suggestions are welcome.
+This is an implementation of a basic calculator. This calculator does not work according to the BODMAS principle.
+Please use this program as is. Contributions and suggestions are welcome.
